@@ -1,5 +1,5 @@
 # GrandNode_Plugin
-![MOLPay Technical Teams](https://github.com/MOLPay/GrandNode_Plugin/wiki/images/molpay-developer.jpg)
+![MOLPay Technical Teams](https://github.com/MOLPay/Magento_Plugin/wiki/images/molpay-developer.jpg)
 
 The MOLPay GrandNode Plugin makes it easy to add MOLPay payment gateway to your GrandNode shopping cart.
 
