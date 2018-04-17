@@ -1,0 +1,14 @@
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Plugins\Grand.Plugin.Payments.MOLPay\obj\Debug\netcoreapp2.0\Grand.Plugin.Payments.MOLPay.csproj.CoreCompileInputs.cache
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Plugins\Grand.Plugin.Payments.MOLPay\obj\Debug\netcoreapp2.0\Grand.Plugin.Payments.MOLPay.AssemblyInfoInputs.cache
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Plugins\Grand.Plugin.Payments.MOLPay\obj\Debug\netcoreapp2.0\Grand.Plugin.Payments.MOLPay.AssemblyInfo.cs
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Grand.Web\Plugins\Payments.MOLPay\Views\MOLPay\_ViewImports.cshtml
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Grand.Web\Plugins\Payments.MOLPay\Description.txt
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Grand.Web\Plugins\Payments.MOLPay\logo.jpg
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Grand.Web\Plugins\Payments.MOLPay\Views\MOLPay\Configure.cshtml
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Grand.Web\Plugins\Payments.MOLPay\Views\MOLPay\PaymentInfo.cshtml
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Grand.Web\Plugins\Payments.MOLPay\Grand.Plugin.Payments.MOLPay.deps.json
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Grand.Web\Plugins\Payments.MOLPay\Grand.Plugin.Payments.MOLPay.dll
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Grand.Web\Plugins\Payments.MOLPay\Grand.Plugin.Payments.MOLPay.pdb
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Plugins\Grand.Plugin.Payments.MOLPay\obj\Debug\netcoreapp2.0\Grand.Plugin.Payments.MOLPay.csprojResolveAssemblyReference.cache
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Plugins\Grand.Plugin.Payments.MOLPay\obj\Debug\netcoreapp2.0\Grand.Plugin.Payments.MOLPay.dll
+C:\Users\MOLPAY-E7440\Desktop\TASK\GrandNode\Plugins\Grand.Plugin.Payments.MOLPay\obj\Debug\netcoreapp2.0\Grand.Plugin.Payments.MOLPay.pdb

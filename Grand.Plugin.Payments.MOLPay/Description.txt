@@ -1,0 +1,8 @@
+﻿Group: Payment methods
+FriendlyName: MOLPay
+SystemName: Payments.MOLPay
+Version: 1.00
+SupportedVersions: 4.10
+Author: Firdaus
+DisplayOrder: 1
+FileName: Grand.Plugin.Payments.MOLPay.dll

@@ -1,0 +1,131 @@
+﻿@{
+    Layout = "_ConfigurePlugin";
+}
+@model ConfigurationModel
+@using Grand.Plugin.Payments.MOLPay.Models;
+@using Grand.Framework;
+@await Component.InvokeAsync("StoreScopeConfiguration")
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-body">
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 text-right">
+                    @Html.OverrideStoreCheckboxFor(model => model.UseSandbox_OverrideForStore, model => model.UseSandbox, Model.ActiveStoreScopeConfiguration)
+                    @Html.GrandLabelFor(model => model.UseSandbox, new Dictionary<string, object> { { "class", "control-label" } }, false)
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    @Html.GrandEditorFor(model => model.UseSandbox)
+                    @Html.ValidationMessageFor(model => model.UseSandbox)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 text-right">
+                    @Html.OverrideStoreCheckboxFor(model => model.MerchantId_OverrideForStore, model => model.MerchantId, Model.ActiveStoreScopeConfiguration)
+                    @Html.GrandLabelFor(model => model.MerchantId, new Dictionary<string, object> { { "class", "control-label" } }, false)
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    @Html.GrandEditorFor(model => model.MerchantId)
+                    @Html.ValidationMessageFor(model => model.MerchantId)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 text-right">
+                    @Html.OverrideStoreCheckboxFor(model => model.Vkey_OverrideForStore, model => model.Vkey, Model.ActiveStoreScopeConfiguration)
+                    @Html.GrandLabelFor(model => model.Vkey, new Dictionary<string, object> { { "class", "control-label" } }, false)
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    @Html.GrandEditorFor(model => model.Vkey)
+                    @Html.ValidationMessageFor(model => model.Vkey)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 text-right">
+                    @Html.OverrideStoreCheckboxFor(model => model.Skey_OverrideForStore, model => model.Skey, Model.ActiveStoreScopeConfiguration)
+                    @Html.GrandLabelFor(model => model.Skey, new Dictionary<string, object> { { "class", "control-label" } }, false)
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    @Html.GrandEditorFor(model => model.Skey)
+                    @Html.ValidationMessageFor(model => model.Skey)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 text-right">
+                    @*@Html.OverrideStoreCheckboxFor(model => model.Captured_OverrideForStore, model => model.Captured, Model.ActiveStoreScopeConfiguration)*@
+                    @Html.GrandLabelFor(model => model.Captured, new Dictionary<string, object> { { "class", "control-label" } }, false)
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    @Html.GrandDropDownListFor(model => model.Captured, Model.CapturedModes)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 text-right">
+                    @*@Html.OverrideStoreCheckboxFor(model => model.Pending_OverrideForStore, model => model.Pending, Model.ActiveStoreScopeConfiguration)*@
+                    @Html.GrandLabelFor(model => model.Pending, new Dictionary<string, object> { { "class", "control-label" } }, false)
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    @Html.GrandDropDownListFor(model => model.Pending, Model.PendingModes)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 text-right">
+                    @*@Html.OverrideStoreCheckboxFor(model => model.Failed_OverrideForStore, model => model.Failed, Model.ActiveStoreScopeConfiguration)*@
+                    @Html.GrandLabelFor(model => model.Failed, new Dictionary<string, object> { { "class", "control-label" } }, false)
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    @Html.GrandDropDownListFor(model => model.Failed, Model.FailedModes)
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <div class="row">
+                <div class="col-md-offset-3 col-sm-offset-3 col-md-9 col-sm-9">
+                    <input type="submit" name="save" class="btn green" value="@T("Admin.Common.Save")" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#orders-grid").kendoGrid({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "@Html.Raw(Url.Action("Configure","Configure"))",
+                            type: "POST",
+                            dataType: "json",
+                            data: additionalData
+                        }
+                    }
+                }
+            })
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        function additionalData()
+        {
+            var data = {
+            Captured: $('#@Html.FieldIdFor(model => model.Captured)').val(),
+            Pending: $('#@Html.FieldIdFor(model => model.Pending)').val(),
+            Failed: $('#@Html.FieldIdFor(model => model.Failed)').val()
+            };
+            addAntiForgeryToken(data);
+            return data;
+        }
+
+        // function additionalData() {
+        //    var data = {
+        //        PaymentStatusId: $('#PaymentStatusId').val()
+        //    };
+        //    addAntiForgeryToken(data);
+        //    return data;
+        //}
+
+    </script>
+}
