@@ -2,7 +2,7 @@
 
 ![grandnode](https://user-images.githubusercontent.com/38641542/74416366-054e0100-4e80-11ea-99d5-f7e34315abbb.jpg)
 
-The MOLPay GrandNode Plugin makes it easy to add MOLPay payment gateway to your GrandNode shopping cart.
+The Razer Merchant Services GrandNode Plugin makes it easy to add Razer Merchant Services payment gateway to your GrandNode shopping cart.
 
 ###### Razer Merchant Services Plugin for Grand Node ######
 
@@ -25,7 +25,7 @@ General documentation regarding the MOLPay API and related payment flows can be 
 Plugin Releases
 ---------------
 **Normal Integration**
-* [MOLPay Plugin for Grand Node Version 4.10](https://github.com/RazerMS/GrandNode_Plugin)
+* [Razer Merchant Services Plugin for Grand Node Version 4.10](https://github.com/RazerMS/GrandNode_Plugin)
 
 Support
 -------
