@@ -1,4 +1,4 @@
-# GrandNode_Plugin
+# [Shopping Cart Plugins] – RazerMS GrandNode
 
 ![grandnode](https://user-images.githubusercontent.com/38641542/74416366-054e0100-4e80-11ea-99d5-f7e34315abbb.jpg)
 
