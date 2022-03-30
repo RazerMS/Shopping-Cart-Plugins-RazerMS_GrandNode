@@ -27,6 +27,17 @@ Plugin Releases
 **Normal Integration**
 * [Razer Merchant Services Plugin for Grand Node Version 4.10](https://github.com/RazerMS/GrandNode_Plugin)
 
+
+## Resources
+
+- GitHub:     https://github.com/RazerMS
+- Website:    https://merchant.razer.com/
+- Twitter:    https://twitter.com/Razer_MS
+- YouTube:    https://www.youtube.com/c/RazerMerchantServices
+- Facebook:   https://www.facebook.com/RazerMerchantServices/
+- Instagram:  https://www.instagram.com/RazerMerchantServices/
+
+
 Support
 -------
 
